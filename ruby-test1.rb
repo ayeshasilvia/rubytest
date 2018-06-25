@@ -12,7 +12,7 @@ Net::HTTP.start(uri.host, uri.port,
   :verify_mode => OpenSSL::SSL::VERIFY_NONE) do |http|
 
   request = Net::HTTP::Get.new uri.request_uri
-  request.basic_auth 'amosaddeque-dev', '72 Loves coffee'
+  request.basic_auth 'username', 'password'
 
   response = http.request request # Net::HTTPResponse object
 
